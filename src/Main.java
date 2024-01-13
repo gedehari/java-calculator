@@ -13,23 +13,24 @@ public class Main {
         System.out.print("Pilih operator (+, -, *, /, ^): ");
         char operator = input.next().charAt(0);
 
-        System.out.print(num1 + " " + operator + " " + num2 + " = ");
-
         switch (operator) {
             case '+':
-                System.out.print(num1 + num2);
+                System.out.println(num1 + " " + operator + " " + num2 + " = " + (num1 + num2));
                 break;
             case '-':
-                System.out.print(num1 - num2);
+                System.out.println(num1 + " " + operator + " " + num2 + " = " + (num1 - num2));
                 break;
             case '*':
-                System.out.print(num1 * num2);
+                System.out.println(num1 + " " + operator + " " + num2 + " = " + (num1 * num2));
                 break;
             case '/':
-                System.out.print(num1 / num2);
+                System.out.println(num1 + " " + operator + " " + num2 + " = " + (num1 / num2));
                 break;
             case '^':
-                System.out.print(Math.pow(num1, num2));
+                System.out.println(num1 + " " + operator + " " + num2 + " = " + (Math.pow(num1, num2)));
+                break;
+            default:
+                System.out.println("Invalid operator.");
                 break;
         }
     }
