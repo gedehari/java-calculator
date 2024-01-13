@@ -10,7 +10,7 @@ public class Main {
         System.out.print("Input angka kedua: ");
         int num2 = input.nextInt();
 
-        System.out.print("Pilih operator (+, -, *, /): ");
+        System.out.print("Pilih operator (+, -, *, /, ^): ");
         char operator = input.next().charAt(0);
 
         System.out.print(num1 + " " + operator + " " + num2 + " = ");
@@ -27,6 +27,9 @@ public class Main {
                 break;
             case '/':
                 System.out.print(num1 / num2);
+                break;
+            case '^':
+                System.out.print(Math.pow(num1, num2));
                 break;
         }
     }
